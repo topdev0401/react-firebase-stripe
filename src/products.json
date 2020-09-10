@@ -1,0 +1,44 @@
+[
+    {
+        "id": "123019821",
+        "title": "HP VH240a 23.8-inch Full HD 1080p IPS LED Monitor with Built-in Speakers and VESA Mounting, Rotating Portrait & Landscape, Tilt, and HDMI & VGA Ports (1KL30AA) - Black",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/71trhuzbhML._AC_SL1500_.jpg",
+        "price": 89.99,
+        "rating": 3
+    },
+    {
+        "id": "123019822",
+        "title": "BENGOO G9000 Stereo Gaming Headset for PS4, PC, Xbox One Controller, Noise Cancelling Over Ear Headphones with Mic, LED Light, Bass Surround, Soft Memory Earmuffs for Laptop Mac Nintendo PS3 Games",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/61NZPCYSeVL._AC_SL1301_.jpg",
+        "price": 29.99,
+        "rating": 4
+    },
+    {
+        "id": "123019823",
+        "title": "1080P Webcam with Microphone, Wansview USB 2.0 Desktop Laptop Computer Web Camera with Auto Light Correction...",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/71zEiQWAUoL._AC_SL1500_.jpg",
+        "price": 34.99,
+        "rating": 4
+    },
+    {
+        "id": "123019824",
+        "title": "Acer Nitro 5 Gaming Laptop, 9th Gen Intel Core i7-9750H, NVIDIA GeForce RTX 2060, 15.6\" Full HD IPS 144Hz Display, 16GB DDR4, 256GB NVMe SSD, Wi-Fi 6,",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/71s1LRpaprL._AC_SL1500_.jpg",
+        "price": 1018.99,
+        "rating": 5
+    },
+    {
+        "id": "123019825",
+        "title": "Lenovo Flex 14 2-in-1 Convertible Laptop, 14 Inch FHD Touchscreen Display, AMD Ryzen 5 3500U Processor, 12GB...",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81OzyRLdsEL._AC_SL1500_.jpg",
+        "price": 599.99,
+        "rating": 4
+    },
+    {
+        "id": "123019826",
+        "title": "Sceptre 24\" Curved 75Hz Gaming LED Monitor Full HD 1080P HDMI VGA Speakers, VESA Wall Mount Ready Metal Black 2019 (C248W-1920RN)",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81mHL0psH-L._AC_SL1500_.jpg",
+        "price": 129.99,
+        "rating": 5
+    }
+]
