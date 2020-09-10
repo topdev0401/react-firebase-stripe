@@ -1,6 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web app was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The web app is deployed to Firebase Hosting [Check it out here](https://challenge-c3151.web.app/)
+..and deployed to Firebase Hosting [Check it out here](https://challenge-c3151.web.app/)
 
 ## Available Scripts
 
