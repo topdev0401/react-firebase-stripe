@@ -1,19 +1,9 @@
 import React from 'react'
 import './Subtotal.css'
 import CurrencyFormat from 'react-currency-format'
+import { getBasketTotal } from './Reducer'
 
 function Subtotal({ basket }) {
-    const getBasketTotal = (basket) => {
-        let sum = 0;
-
-        basket.forEach(item => {
-            sum += item.price;
-        });
-
-        return sum;
-
-    };
-
     return (
         < div className="subtotal" >
             <CurrencyFormat
