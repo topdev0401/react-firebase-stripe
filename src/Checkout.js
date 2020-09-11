@@ -6,14 +6,14 @@ import BasketItem from './BasketItem';
 
 function Checkout() {
     const BANNER_AD = 'https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg';
-    const [{ basket }] = useStateValue();
+    const [{ basket, user }] = useStateValue();
 
     return (
         <div className="checkout">
             <div className="checkout__left">
                 <img className="checkout_ad" src={BANNER_AD} alt="" />
                 <div className="checkout__title">
-                    <h2>You shopping basket</h2>
+                    <h2>Hey {user?.email}, here's you shopping basket</h2>
                 </div>
 
                 {basket.map((_, i) => (

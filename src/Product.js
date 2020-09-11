@@ -5,6 +5,13 @@ import { useStateValue } from './StateProvider';
 function Product({ id, title, image, price, rating, added }) {
     const [{ basket }, dispatch] = useStateValue();
 
+    const generateCartId = (id) => {
+        let randomString = Math.random().toString(36);
+        const hashString = `${id}${randomString}`;
+        console.log(hashString);
+        return hashString;
+    }
+
     const addToBasket = () => {
         dispatch({
             type: 'ADD_TO_BASKET',
@@ -14,7 +21,7 @@ function Product({ id, title, image, price, rating, added }) {
                 image: image,
                 price: price,
                 rating: rating,
-                cartId: `${id}-${basket.length}`
+                cartId: generateCartId(id)
             }
         })
     };

@@ -2,7 +2,8 @@ import products from './products.json'
 
 export const initialState = {
     basket: [],
-    products: products
+    products: products,
+    user: null
 }
 
 export const getBasketTotal = (basket) =>
@@ -17,11 +18,14 @@ const reducer = (state, action) => {
                 basket: [...state.basket, action.item],
             };
         case 'REMOVE_FROM_BASKET':
-            console.log(state.basket);
-            console.log(action.cartId);
             return {
                 ...state,
                 basket: state.basket.filter(item => item.cartId !== action.cartId),
+            };
+        case 'SET_USER':
+            return {
+                ...state,
+                user: action.user
             };
         default:
             return state;
