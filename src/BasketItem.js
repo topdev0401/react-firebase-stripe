@@ -1,40 +1,44 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import './BasketItem.css'
 import { useStateValue } from './StateProvider';
 
-function BasketItem({ id, title, image, price, rating, cartId }) {
+//{ id, title, image, price, rating, cartId }
+
+const BasketItem = forwardRef((props, ref) => {
+
     const [{ basket }, dispatch] = useStateValue();
 
-    const removeFromBasket = () => {
+    const removeFromBaskset = () => {
         dispatch({
             type: 'REMOVE_FROM_BASKET',
-            cartId: cartId
+            cartId: props.cartId
         })
     };
 
     return (
-        <div className="basketItem">
+        <div className="basketItem" ref={ref}>
             <div className="basketItem__info">
-                <p>{title}</p>
+                <p>{props.title}</p>
                 <p className="basketItem__price">
                     <small>$</small>
-                    <strong>{price}</strong>
+                    <strong>{props.price}</strong>
                 </p>
                 <div className="basketItem__rating">
                     {
-                        Array(rating).fill().map((_, i) => (
+                        Array(props.rating).fill().map((_, i) => (
                             <p key={i}>🌟</p>
                         ))
                     }
                 </div>
             </div>
 
-            <img src={image} alt="" />
+            <img src={props.image} alt="" />
 
-            <button onClick={removeFromBasket}>Remove from Basket</button>
+            <button onClick={removeFromBaskset}>Remove from Basket</button>
 
         </div>
     )
-}
+
+});
 
 export default BasketItem
